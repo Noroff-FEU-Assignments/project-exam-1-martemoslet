@@ -1,5 +1,6 @@
 header a,
-h1 {
+h1,
+.footer-logo {
   font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
   text-decoration: none;
 }
@@ -10,26 +11,40 @@ h1,
   color: #276d57;
 }
 
-span {
+.logo-text {
   font-family: "Lora", Verdana, Geneva, Tahoma, serif;
   font-style: italic;
   color: #376b82;
 }
 
-p {
+p,
+.footer-menu {
   font-family: "Lato", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header li {
   text-transform: uppercase;
   padding: 0 20px 0 20px;
+  display: inline-flex;
 }
 
 nav {
   display: none;
-  display: inline-flex;
+  position: fixed;
+  left: 0px;
+  width: 100%;
 }
 
+nav ul {
+  background-color: #e0ede6;
+  width: 100%;
+}
+
+nav li {
+  display: inline-flex;
+  padding: 15px;
+  background-color: #e0ede6;
+}
 #hamburger-menu {
   display: none;
 }
@@ -38,26 +53,21 @@ nav {
   display: flex;
 }
 
-nav li {
-  display: inline-flex;
-}
-
-/* Home page */
-
-span {
+.logo-text {
   display: none;
 }
 
 body {
   margin: 0;
+  background-color: #f5fcf8;
 }
 
 header {
   background-color: #e0ede6;
 }
 
-body {
-  background-color: #f5fcf8;
+main {
+  padding: 10px;
 }
 
 .fa-bars {
@@ -83,14 +93,80 @@ body {
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
 }
+/* Home page */
+
+/* Footer */
+
+footer {
+  background-color: #276d57;
+}
+
+.footer-content {
+  color: #e0ede6;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+  margin: 50px auto;
+  display: inline-flex;
+}
+
+.footer-logo {
+  padding: 20px;
+  font-weight: 700;
+}
+
+.footer-content a {
+  color: #e0ede6;
+  text-decoration: none;
+}
+
+.footer-menu li {
+  list-style: none;
+}
+
+.follow {
+  display: flex;
+}
+
+.socials li {
+  list-style: none;
+  margin: 0 4px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
 
 @media (min-width: 900px) {
+  /* Home page */
+
   header label {
     display: none;
   }
-
   nav {
     display: inline-flex;
     position: static;
+  }
+
+  nav ul {
+    display: flex;
+    top: 0px;
+    max-width: 100%;
+    grid-column: 2;
+    justify-self: center;
+  }
+
+  .logo-text {
+    display: inline-flex;
+    align-self: center;
+    padding-left: 10px;
+    align-self: center;
+  }
+
+  .menu {
+    width: 100%;
+    display: flex;
+  }
+  .logo {
+    padding-left: 20px;
   }
 }
