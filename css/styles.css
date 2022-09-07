@@ -1,5 +1,6 @@
 header a,
 h1,
+h2,
 .footer-logo {
   font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
   text-decoration: none;
@@ -149,6 +150,54 @@ footer {
   display: inline-block;
   text-decoration: none;
   font-size: 1.5rem;
+}
+
+/* Blog archive */
+
+.blogarchive {
+  padding-left: 20px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 40px auto 0 auto;
+}
+
+.blogarchive h2 {
+  text-decoration: none;
+  color: #276d57;
+  font-size: 1.2em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.blogarchive a {
+  text-decoration: none;
+}
+
+.blog {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  max-width: 300px;
+  margin: 10px;
+  background-color: #fff;
+}
+
+.card p {
+  color: #343434;
+  width: 270px;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.blog-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center top;
 }
 
 /* Contact page */
