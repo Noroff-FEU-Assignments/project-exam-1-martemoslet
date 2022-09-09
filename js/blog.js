@@ -9,7 +9,6 @@ async function getBlog(url){
         <a href="blogpost.html?id=${post.id}" class="card">
         <div class="blog-image" style="background-image: url('${post._embedded['wp:featuredmedia']['0'].source_url}')"></div>
         <h2 class="blog-title">${post.title.rendered}</h2>
-        <div class="blogpost">${post.content.rendered}</div>
         </a>`;
     })
 }

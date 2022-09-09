@@ -200,6 +200,26 @@ footer {
   background-position: center top;
 }
 
+/* Blog post page */
+
+.blogpost-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blogpost-page h1 {
+  text-align: center;
+}
+
+.blogpost-image {
+  height: 550px;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
 /* Contact page */
 
 .contact-container {
