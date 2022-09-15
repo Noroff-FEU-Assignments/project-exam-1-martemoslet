@@ -14,7 +14,7 @@ async function getData() {
         blogpost.innerHTML = "";
 
         blogpost.innerHTML = `<h1 class="title">${post.title.rendered}</h1>
-                            <div class="blogpost-image" style="background-image: url('${post._embedded['wp:featuredmedia'][0].source_url}')"></div
+                            <div id="blogimg" class="blogpost-image" style="background-image: url('${post._embedded['wp:featuredmedia'][0].source_url}')"></div
                             <div class="post">${post.content.rendered}</div>`
     }
     
@@ -25,3 +25,22 @@ async function getData() {
 }
 
 getData();
+
+const originalImage = document.querySelector("#blogimg");
+
+  originalImage.addEventListener("click", function () {
+    modalImage.src = this.src;
+  });
+
+
+setTimeout(() => {
+    const modalContainer = document.querySelector(".modal");
+    const modalContent = document.querySelector(".modalContent");
+    const postImage = document.querySelector("#modalImage");
+
+    postImage.addEventListener("click", function () {
+        modalContainer.style.display = "flex";
+        modalContent.src = this.src;
+    });
+}, 1000);
+
