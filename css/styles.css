@@ -12,7 +12,8 @@ h1,
   color: #276d57;
 }
 
-.logo-text {
+.logo-text,
+.quick-facts h2 {
   font-family: "Lora", Verdana, Geneva, Tahoma, serif;
   font-style: italic;
   color: #376b82;
@@ -164,7 +165,8 @@ footer {
   margin: auto;
 }
 
-.blogarchive h1 {
+.blogarchive h1,
+.aboutpage h1 {
   padding-left: 40px;
 }
 
@@ -210,7 +212,8 @@ footer {
 
 /* Blog post page */
 
-.blogpost-page {
+.blogpost-page,
+.aboutpage {
   max-width: 800px;
   margin: 0 auto;
 }
@@ -219,13 +222,15 @@ footer {
   text-align: center;
 }
 
-.blogpost-image {
+.blogpost-image,
+.aboutpage img {
   height: 250px;
   display: block;
   margin: auto;
 }
 
-.blogpost p {
+.blogpost p,
+.aboutpage p {
   max-width: 600px;
   padding: 20px;
   margin: auto;
@@ -278,6 +283,27 @@ input {
   margin-top: 2px;
 }
 
+/* About page */
+
+.quick-facts {
+  width: 300px;
+  margin: auto;
+  background-color: #e0ede6;
+  margin-bottom: 30px;
+}
+
+.quick-facts img {
+  align-self: center;
+  width: 100%;
+  height: 100%;
+}
+
+.quick-facts h2 {
+  text-align: center;
+  margin: 10px auto 0;
+  font-weight: 400;
+}
+
 @media (min-width: 800px) {
   /* Home page */
 
@@ -326,5 +352,18 @@ input {
 
   .contact-container {
     width: 400px;
+  }
+
+  .aboutpage img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* About page */
+
+  .about-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 30px;
   }
 }
