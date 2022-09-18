@@ -11,10 +11,11 @@ async function getData() {
     try {
         const response = await fetch(url);
         const post = await response.json();
+        const blogImage = post._embedded['wp:featuredmedia'][0].source_url;
         blogpost.innerHTML = "";
 
         blogpost.innerHTML = `<h1 class="title">${post.title.rendered}</h1>
-                            <div id="blogimg" class="blogpost-image" style="background-image: url('${post._embedded['wp:featuredmedia'][0].source_url}')"></div
+                            <img id="blogimg" class="blogpost-image" src="${blogImage}" />
                             <div class="post">${post.content.rendered}</div>`
     }
     
@@ -26,21 +27,21 @@ async function getData() {
 
 getData();
 
-const originalImage = document.querySelector("#blogimg");
-
-  originalImage.addEventListener("click", function () {
-    modalImage.src = this.src;
-  });
-
-
 setTimeout(() => {
-    const modalContainer = document.querySelector(".modal");
-    const modalContent = document.querySelector(".modalContent");
-    const postImage = document.querySelector("#modalImage");
-
+    const modalContainer = document.querySelector(".modal-container");
+    const modalImage = document.querySelector(".modal-image");
+    const postImage = document.querySelector("#blogimg");
+  
     postImage.addEventListener("click", function () {
-        modalContainer.style.display = "flex";
-        modalContent.src = this.src;
+      modalContainer.style.display = "flex";
+      modalImage.src = this.src;
     });
-}, 1000);
-
+  }, "3000");
+  
+  const modalContainer = document.querySelector(".modal-container");
+  
+  window.addEventListener("click", function (event) {
+    if (event.target == modalContainer) {
+      modalContainer.style.display = "none";
+    }
+  });
