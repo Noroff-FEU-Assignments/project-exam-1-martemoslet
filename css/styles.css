@@ -70,7 +70,8 @@ header {
 }
 
 main {
-  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 200px;
 }
 
 .fa-bars {
@@ -115,6 +116,9 @@ button {
 
 footer {
   background-color: #276d57;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-content {
@@ -217,11 +221,8 @@ footer {
 
 .blogpost-image {
   height: 250px;
-  width: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
+  display: block;
+  margin: auto;
 }
 
 .blogpost p {
@@ -236,10 +237,14 @@ footer {
   flex-direction: column;
   inset: 0;
   align-items: center;
-  padding-top: 60px;
-  height: 500px;
+  padding-top: 40px;
+}
+
+.modal-image {
+  margin: auto;
+  display: block;
   width: 100%;
-  max-width: 700px;
+  max-width: 9000px;
 }
 
 /* Contact page */
@@ -311,6 +316,10 @@ input {
 
   .blogpost-image {
     height: 550px;
+  }
+
+  .modal-image {
+    width: 80%;
   }
 
   /* Contact page */

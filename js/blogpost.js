@@ -1,5 +1,6 @@
 const blogpost = document.querySelector(".blogpost");
 const queryString = document.location.search;
+const title = document.querySelector(".title")
 
 const params = new URLSearchParams(queryString);
 
@@ -13,10 +14,12 @@ async function getData() {
         const post = await response.json();
         const blogImage = post._embedded['wp:featuredmedia'][0].source_url;
         blogpost.innerHTML = "";
+        title.innerHTML = "";
 
         blogpost.innerHTML = `<h1 class="title">${post.title.rendered}</h1>
                             <img id="blogimg" class="blogpost-image" src="${blogImage}" />
                             <div class="post">${post.content.rendered}</div>`
+        title.innerHTML = `${post.title.rendered}`;                  
     }
     
    catch(error) {
