@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore Stjørdal - a hiking blog" />
-    <title>Document</title>
+    <title>Explore Stjørdal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lora:ital,wght@0,700;1,400&family=Montserrat:wght@400;700;800&display=swap" 
@@ -34,27 +34,36 @@
     </header>
     <main>
         <h1>Latest blog posts</h1>
+        <div class="slider">
+            <div id="slide" class="slide"></div>
+            <div id="slidetwo" class="slide"></div>
+            <button class="btn btn-next"> < </button>
+            <button class="btn btn-prev"> > </button>
+        </div>
     </main>
+    <footer>
+        <section class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html">Explore<br>Stjørdal</a>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="follow">
+              <ul class="socials">
+                <li><a href="https://www.instagram.com/" class="fab fa-instagram"></a></li>
+                <li><a href="https://www.facebook.com/" class="fab fa-facebook"></a></li>
+                <li><a href="https://twitter.com/twitter" class="fab fa-twitter"></a></li>
+                <li><a href="https://www.youtube.com/" class="fab fa-youtube"></a></li>
+              </ul>
+            </div>
+        </section>
+    </footer>
+    <script src="js/carousel.js"></script>
+    <script src="js/slidetwo.js"></script>
+    <script src="js/slidefunctionality.js"></script>
 </body>
-<footer>
-    <section class="footer-content">
-        <div class="footer-logo">
-            <a href="index.html">Explore<br>Stjørdal</a>
-        </div>
-        <div class="footer-menu">
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-        <div class="follow">
-          <ul class="socials">
-            <li><a href="https://www.instagram.com/" class="fab fa-instagram"></a></li>
-            <li><a href="https://www.facebook.com/" class="fab fa-facebook"></a></li>
-            <li><a href="https://twitter.com/twitter" class="fab fa-twitter"></a></li>
-            <li><a href="https://www.youtube.com/" class="fab fa-youtube"></a></li>
-          </ul>
-        </div>
-    </section>
-</footer>
 </html>
