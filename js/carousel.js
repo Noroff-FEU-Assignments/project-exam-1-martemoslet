@@ -10,8 +10,10 @@ async function getSlider() {
         const slideImage = post._embedded['wp:featuredmedia'][0].source_url;
 
         slideContainer.innerHTML += `
+                                <a href="blogpost.html?id=${post.id}">
                                 <img id="slideimg" class="slide-image" src="${slideImage}" />
                                 <h2 class="blog-title">${post.title.rendered}</h2>
+                                </a>
                                 `;
     }
     catch(error) {
