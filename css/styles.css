@@ -111,6 +111,15 @@ button {
   font-size: 1em;
 }
 
+.active {
+  text-decoration: underline;
+  color: #276d57;
+}
+
+.menu li:hover {
+  font-style: italic;
+}
+
 /* Home page */
 
 .frontpage h1 {
