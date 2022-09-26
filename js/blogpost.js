@@ -13,11 +13,12 @@ async function getData() {
         const response = await fetch(url);
         const post = await response.json();
         const blogImage = post._embedded['wp:featuredmedia'][0].source_url;
+        const blogImageAlt = post._embedded['wp:featuredmedia'][0].alt_text;
         blogpost.innerHTML = "";
         title.innerHTML = "";
 
         blogpost.innerHTML = `<h1 class="title">${post.title.rendered}</h1>
-                            <img id="blogimg" class="blogpost-image" src="${blogImage}" />
+                            <img id="blogimg" class="blogpost-image" src="${blogImage}" alt="${blogImageAlt}" />
                             <div class="post">${post.content.rendered}</div>`
         title.innerHTML = `${post.title.rendered}`;                  
     }
