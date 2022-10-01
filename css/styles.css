@@ -273,13 +273,6 @@ footer {
   background-color: #fff;
 }
 
-.card p {
-  color: #343434;
-  width: 270px;
-  margin: auto;
-  padding-bottom: 10px;
-}
-
 .blog-image {
   height: 200px;
   background-size: cover;

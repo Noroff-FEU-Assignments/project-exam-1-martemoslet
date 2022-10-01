@@ -24,7 +24,7 @@ async function getPosts() {
                                     </a>`;
 		});
 	} catch (error) {
-		blogContainer.innerHTML = "There was an error retrieving the posts";
+		blogContainer.innerHTML = "An error occurred when calling the API";
 	}
 }
 
