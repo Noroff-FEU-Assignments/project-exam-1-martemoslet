@@ -1,4 +1,5 @@
 const blogContainer = document.querySelector(".blog");
+const blogPosts = document.querySelector(".blogposts");
 
 const viewmoreButton = document.querySelector("button");
 let page = 0;

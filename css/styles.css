@@ -316,6 +316,24 @@ footer {
 
 /* Blog post page */
 
+.loader {
+  border: 12px solid #276d57;
+  border-top: 12px solid #e0ede6;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .blogpost-page,
 .aboutpage {
   max-width: 800px;
