@@ -1,7 +1,8 @@
 header a,
 h1,
 h2,
-.footer-logo {
+.footer-logo,
+.welcome p {
   font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
   text-decoration: none;
 }
@@ -121,6 +122,32 @@ button {
 }
 
 /* Home page */
+
+.welcome img {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.welcome {
+  max-width: 400px;
+  background-color: #276d57;
+  margin: auto;
+}
+
+.welcome-text {
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+}
+
+.welcome p {
+  font-style: italic;
+  color: #e0ede6;
+  font-size: 1.7em;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
 
 .frontpage h1 {
   text-align: center;
@@ -311,6 +338,7 @@ footer {
   max-width: 600px;
   padding: 20px;
   margin: auto;
+  font-size: 1.2em;
 }
 
 .modal-container {
@@ -381,8 +409,31 @@ input {
   font-weight: 400;
 }
 
+@media (min-width: 900px) {
+  .welcome p {
+    font-size: 2.5em;
+  }
+}
+
 @media (min-width: 800px) {
   /* Home page */
+
+  .welcome {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: auto;
+  }
+
+  .welcome p {
+    padding: 40px;
+    max-width: 280px;
+  }
+
+  .welcome text {
+    margin: auto;
+    max-width: 800px;
+  }
 
   header label {
     display: none;
@@ -436,10 +487,6 @@ input {
   }
 
   /* Blogpost page*/
-
-  .post {
-    background-color: #e0ede6;
-  }
 
   .blogpost-image {
     height: 550px;
