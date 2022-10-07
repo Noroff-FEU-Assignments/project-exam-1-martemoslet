@@ -1,4 +1,5 @@
 ## Project Exam 1
+<img width="1440" alt="Skjermbilde 2022-10-07 kl  12 12 28" src="https://user-images.githubusercontent.com/95755829/194530645-ef4a118c-4637-4911-8bae-a6695d3e8bcd.png">
 
 School project to create a blog site
 
