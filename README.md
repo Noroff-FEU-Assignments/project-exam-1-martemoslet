@@ -42,7 +42,7 @@ If you want to get in touch, this is where you can contact me:
 
 [My Instagram page](https://www.instagram.com/martemo/)
 
-[My LinkedIn page](www.linkedin.com/in/marte-moslet-728781138)
+[My LinkedIn page](https://www.linkedin.com/in/marte-moslet-728781138)
 
 ## Goal
 
